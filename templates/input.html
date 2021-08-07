@@ -2,23 +2,33 @@
 
 {% block content %}
 
-<h1>Something</h1>
+<h1>Rock Paper Scissors</h1>
 
-<form class="form-inline" action="/new_game" method="post">
-    <label for="P1 Name">Player 1 Name</label>
-    <input type="text" name="name" id="name">
-    <label for="date">Date</label>
-    <input type="date" name="date" id="date">
-    <label for="guests">Number of Guests</label>
-    <input type="number" name="guests" id="guests">
-    <label for="recurring">Recurring?</label>
-    <input type="checkbox" name="recurring" id="recurring" value="False">
-    <label for="roomLocation">Room Location</label>
-    <input type="text" name="roomLocation" id="roomLocation">
-    <label for="description">Description</label>
-    <textarea name="description" rows="2" cols="30"></textarea>
-    <input type="submit" value="Add event">
-  </form> <!-- ADDED -->
+<form class="form-inline" action="/winner" method="POST">
+    <label for="p1_name">Player 1 Name</label>
+    <input type="text" name="p1_name" id="p1_name">
+    
+    <label for="p1_coice">Player 1 Choice</label>
+    <select name="p1_choice" id="p1_choice">
+        <option value="">---Please select an option---</option>
+        <option value="rock">Rock</option>
+        <option value="paper">Paper</option>
+        <option value="scissors">Scissors</option>
+    </select>
+
+    <label for="p2_name">Player 2 Name</label>
+    <input type="text" name="p2_name" id="p2_name">
+    
+    <label for="p2_choice">Player 2 Choice</label>
+    <select name="p2_choice" id="p2_choice">
+        <option value="">---Please select an option---</option>
+        <option value="rock">Rock</option>
+        <option value="paper">Paper</option>
+        <option value="scissors">Scissors</option>
+    </select>
+  
+    <input type="submit" value="Add Event">
+</form>
 
 
 {% endblock %}
