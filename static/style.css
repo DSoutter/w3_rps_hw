@@ -1,0 +1,57 @@
+html {
+    background-color: white;
+    background-image: 
+    linear-gradient(45deg, rgba(2, 92, 110, 0.5) 50%, transparent 50%),
+    linear-gradient(135deg, rgba(10, 111, 151, 0.5) 50%, transparent 50%);
+background-size: 206px 206px;
+}
+
+body { 
+    font-family: sans-serif;
+}
+
+html > body > ul {
+    display: flex;
+    background-color: rgb(124, 231, 195);
+    padding:15px;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+body > ul > a {
+    color: rgb(141, 122, 86);
+}
+body > h1{
+    background: rgb(38, 136, 111);
+    text-align: center;
+    color: white;
+}
+
+body > div {
+    background-color: thistle;
+    color: teal;
+}
+
+.p1, .p2 {
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    background-color: white;
+    margin-left: 15%;
+    padding: 5px;
+    /* height: 25px */
+}
+
+.submit-button{
+    align-content: center;
+    margin: 5px;
+    margin-left: 15%;
+    width: 70%;
+}
+
+.winner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+}

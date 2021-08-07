@@ -3,31 +3,32 @@
 {% block content %}
 
 <h1>Rock Paper Scissors</h1>
-
+<div class=p1>
 <form class="form-inline" action="/winner" method="POST">
-    <label for="p1_name">Player 1 Name</label>
+    <label for="p1_name">Player 1 Name: </label>
     <input type="text" name="p1_name" id="p1_name">
     
-    <label for="p1_coice">Player 1 Choice</label>
+    <label for="p1_coice">Player 1 Choice: </label>
     <select name="p1_choice" id="p1_choice">
         <option value="">---Please select an option---</option>
         <option value="rock">Rock</option>
         <option value="paper">Paper</option>
         <option value="scissors">Scissors</option>
     </select>
-
-    <label for="p2_name">Player 2 Name</label>
+</div>
+<div class=p2>
+    <label for="p2_name">Player 2 Name: </label>
     <input type="text" name="p2_name" id="p2_name">
     
-    <label for="p2_choice">Player 2 Choice</label>
+    <label for="p2_choice">Player 2 Choice: </label>
     <select name="p2_choice" id="p2_choice">
         <option value="">---Please select an option---</option>
         <option value="rock">Rock</option>
         <option value="paper">Paper</option>
         <option value="scissors">Scissors</option>
     </select>
-  
-    <input type="submit" value="Add Event">
+</div> 
+    <input type="submit" value="Submit" class="submit-button">
 </form>
 
 
