@@ -1,10 +1,15 @@
 from models.game import *
 from models.player import *
 
-person1=Player("John","rock")
-person2=Player("Paul","paper")
-person3=Player("George","scissors")
-person4=Player("Ringo","rock")
-person5=Player("Mark","paper")
-person6=Player("Jeremy","scissors")
 
+p1=Player("Mark", "")
+p2=Player("Jeremy", "")
+
+# my_list = [player1, player2]
+# rock = Player("Mark","rock")
+
+# paper = Player("Jeremy","paper")
+
+# scissors = Player("Sophie","rock")
+
+# outcome = [rock, paper, scissors]

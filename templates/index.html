@@ -2,5 +2,21 @@
 
 {% block content %}
 
-<h1>Something</h1>
+<h1>Here are the results of the game!</h1>
+
+<div>
+    {% if p1move == p2move %}
+     None wins
+    {% elif p1move == "rock" and p2move == "scissors" %}
+    Player 1 wins playing {{p1move}}
+    {% elif p1move == "paper" and p2move == "rock" %}
+    Player 1 wins playing {{p1move}}
+    {% elif p1move == "scissors" and p2move == "paper" %}
+    Player 1 wins playing {{p1move}}
+    {% else %}
+    Player 2 wins playing {{p2move}}
+    {% endif %}
+    <!-- something in here which results in P1 or P2 winning. -->
+</div> 
+
 {% endblock %}
