@@ -2,11 +2,11 @@
 
 {% block content %}
 
-<h1>Here are the results of the game!</h1>
+<h1>Within the URL, the results are:</h1>
 
 <div>
     {% if p1move == p2move %}
-     None wins
+     No one wins
     {% elif p1move == "rock" and p2move == "scissors" %}
     Player 1 wins playing {{p1move}}
     {% elif p1move == "paper" and p2move == "rock" %}

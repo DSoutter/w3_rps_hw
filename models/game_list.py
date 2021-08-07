@@ -4,8 +4,8 @@ from models.player import *
 
 # p1=Player("Mark", "")
 # p2=Player("Jeremy", "")
-def new_game():
-    Game.game_on(player1, player2)
+# def new_game():
+#     Game.game_on(player1, player2)
 # my_list = [player1, player2]
 # rock = Player("Mark","rock")
 

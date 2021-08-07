@@ -4,9 +4,9 @@ from models.game_list import *
 from models.game import *
 from models.player import *
 
-@app.route('/')
+@app.route('/home')
 def index():
-    return "Hello World"
+    return render_template('home.html')
 
 @app.route('/<p1move>/<p2move>')
 def results(p1move,p2move):
@@ -25,4 +25,4 @@ def play_game():
     player1=Player(name1,choice1)
     player2=Player(name2,choice2)
     winner = Game.game_on(player1, player2)
-    return render_template('winner.html', winner = winner)
+    return render_template('winner.html', winner = winner, player1=player1,player2=player2)
